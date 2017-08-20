@@ -256,3 +256,15 @@ h3{
     line-height: 1.6em;
 }
 /**.download*/
+.download a{
+    display: inline-block;
+   width: 100px;
+   height: 32px;
+   line-height: 32px;
+     border-radius: 20px;
+    transition: .6s;
+}
+.download a:hover{
+    background-color: rgba(0,0,0,0.6);
+    border-radius: 8px;
+}
