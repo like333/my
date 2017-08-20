@@ -28,7 +28,7 @@
 }
 
 body{
-    min-width: 1024px;
+     min-width:600px; 
     color: white;
     font-size: 18px;
     font-family: "webfont";  
@@ -71,19 +71,26 @@ h3{
 }
 
 /*
-*main
+*content .main
 */
-
-.main{
-    max-width: 1024px;
-    width: 100%;
-    padding: 30px;
+.content{
+    text-align: center;
     height: 100%;
+    width: 1024px;
     margin: 0 auto;
+}
+.main_align {
+    height: 100%;
+    width: 1px;
+    line-height: 100%;
+}
+.main_align ,.main {
+    vertical-align: middle;
+    display: inline-block;
 }
 .main .title{
     text-align: center;
-    padding: 20px 0;
+    margin-bottom: 40px;
     color: white;
     font-size: 40px;
     text-shadow: 1px 2px rgba(0,0,0,0.3), 2px 4px rgba(255,255,255,0.4);
@@ -103,30 +110,20 @@ h3{
     height: 100%;
     width: 100%;
     text-align: center;
-    margin: -60px auto 0;
     transition: 0.8s;
-    transform: translateY(800px) scale(0);
-   
+    transform: translateY(800px) scale(0); 
 }
 .main .show{
     transform: translateY(0px) scale(1);
 }
-.main_align {
-    height: 100%;
-    width: 1px;
-    line-height: 100%;
+.main .message ul{
+    width: 900px;
+    overflow: hidden;
 }
-.main_align ,.main_mes {
-    
-    vertical-align: middle;
-    display: inline-block;
-}
-.main .work{
-    min-width:1000px;
-    margin: 0 auto; 
-}
+
+/*.work*/
 .work .componey p{
-     text-align: left;
+      text-align: left; 
 }
 .work .timeLine{
     width: 850px;
@@ -144,10 +141,9 @@ h3{
     top: -6px;
 }
 .main .work ul { 
-    min-width: 850px;
-    overflow: hidden; 
     position: relative;
 }
+.work li { position: absolute; }
 .work .time{
     height: 60px;
     font-weight: bold;
@@ -164,17 +160,19 @@ h3{
 .work .timeLine span:nth-of-type(3){
     left: 590px;
 }
-
 .work .componey {
-    height: 400px;
+     height: 340px; 
 }
-.main .work li { position: absolute; }
-.main .work .componey li{ width: 260px; font-size: 16px;}
-.work h3 {border: none; text-align: left;}
- .work .componey  p{
+
+.work .componey li{
+     width: 260px; 
+     font-size: 16px;
+    }
+.work .componey h3 {border: none; text-align: left;}
+.work .componey  p{
     color: rgba(255,255,255,0.7);
 }
-.main .work .componey p span{
+.work .componey p span{
     font-size: 18px;
     line-height: 1.6em;
     background: rgba(0,0,0,0.2);
@@ -184,11 +182,7 @@ h3{
     margin: 10px 0;
     display: inline-block;
 }
-
-.project ul{
-    width: 900px;
-    overflow: hidden;
-}
+/*.project*/
 .project li{
     float: left;
     width: 300px;
@@ -199,15 +193,16 @@ h3{
     width: 240px;
     height: 130px;
 }
-.skill ul{
-    width:900px;
-overflow: hidden;
-}
+/*.skill*/
 .skill ul li{
     float: left;
     width: 200px;
     border:1px #fff solid;
     margin-right: 20px;
+}
+.skill li p:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.3);
 }
 .skill h3{
     padding: 5px;
@@ -218,20 +213,10 @@ overflow: hidden;
     height: 32px;
     line-height: 32px;
 }
-.skill li p:hover{
-    cursor: pointer;
-    background-color: rgba(255,255,255,0.3);
-}
-
-.exercise ul{
-    margin-top: 40px;
-    overflow: hidden;
-    width: 900px;
-    
-}
+/*.exercise*/
 .exercise ul li{
     margin-top: 20px;
-min-height: 230px;
+    min-height: 230px;
     float: left;
     width: 280px;
 
@@ -239,7 +224,7 @@ min-height: 230px;
 .exercise li a{
     display: inline-block;
     width: 100px;
-   padding: 10px;
+    padding: 10px;
      border-radius: 6%; 
     height: 120px;
     overflow: hidden;
@@ -270,3 +255,4 @@ min-height: 230px;
     font-size: 14px;
     line-height: 1.6em;
 }
+/**.download*/
