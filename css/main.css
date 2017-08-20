@@ -28,9 +28,10 @@
 }
 
 body{
+    min-width: 1024px;
     color: white;
     font-size: 18px;
-      font-family: "webfont";  
+    font-family: "webfont";  
     letter-spacing: 0.12em;
 }
 
@@ -183,9 +184,7 @@ h3{
     margin: 10px 0;
     display: inline-block;
 }
-.project{
 
-}
 .project ul{
     width: 900px;
     overflow: hidden;
@@ -201,11 +200,12 @@ h3{
     height: 130px;
 }
 .skill ul{
+    width:900px;
 overflow: hidden;
 }
 .skill ul li{
     float: left;
-    width: 230px;
+    width: 200px;
     border:1px #fff solid;
     margin-right: 20px;
 }
