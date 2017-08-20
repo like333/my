@@ -1,0 +1,272 @@
+/*
+*2017/8/17 By Like
+*reset
+*/
+
+/*字体设置*/
+@font-face {font-family: 'webfont';
+    src: url('../img/webfont.eot'); /* IE9*/
+    src: url('../img/webfont.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+    url('../img/webfont.woff') format('woff'), /* chrome、firefox */
+    url('../img/webfont.ttf') format('truetype'), /* chrome、firefox、opera、Safari, Android, iOS 4.2+*/
+    url('../img/webfont.svg#webfont') format('svg'); /* iOS 4.1- */
+}
+.web-font{
+    font-family:"webfont" !important;
+    /* font-size:16px; */
+    font-style:normal;
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-stroke-width: 0.2px;
+    -moz-osx-font-smoothing: grayscale;
+}
+.icon {
+   width: 1.4em; 
+   height:1.4em;
+   vertical-align: -0.4em;
+   fill: currentColor;
+   overflow: hidden;
+}
+
+body{
+    color: white;
+    font-size: 18px;
+      font-family: "webfont";  
+    letter-spacing: 0.12em;
+}
+
+h1,h2,h3,ul{
+    padding: 0;
+    margin: 0;
+}
+li{
+    list-style: none;
+}
+p{
+    margin: 0;
+    text-align: center;
+    padding: 10px 0;
+}
+a{text-decoration: none;}
+a:hover{
+    text-decoration: underline;
+}
+h3{
+    margin-top: 20px;
+    border-top: 1px rgba(255,255,255,0.3) solid;
+    text-align: center;
+    padding-top: 20px;
+}
+#fp-nav ul li a span, .fp-slidesNav ul li a span{
+    background: white;
+}
+
+/*动画设置*/
+@keyframes roate{
+    0% { transform: roate(0deg);}
+    100%{ transform: rotate(360deg);}
+}
+.animate_roate{
+    animation: roate 3s linear infinite;
+}
+
+/*
+*main
+*/
+
+.main{
+    max-width: 1024px;
+    width: 100%;
+    padding: 30px;
+    height: 100%;
+    margin: 0 auto;
+}
+.main .title{
+    text-align: center;
+    padding: 20px 0;
+    color: white;
+    font-size: 40px;
+    text-shadow: 1px 2px rgba(0,0,0,0.3), 2px 4px rgba(255,255,255,0.4);
+}
+.main a{
+    
+    color:#fff;
+    background: rgba(0,0,0,0.2);
+    padding: 6px;
+    border-radius: 4px;
+    font-size: 16px;
+    letter-spacing: 0.1em;
+
+}
+
+.main .message{
+    height: 100%;
+    width: 100%;
+    text-align: center;
+    margin: -60px auto 0;
+    transition: 0.8s;
+    transform: translateY(800px) scale(0);
+   
+}
+.main .show{
+    transform: translateY(0px) scale(1);
+}
+.main_align {
+    height: 100%;
+    width: 1px;
+    line-height: 100%;
+}
+.main_align ,.main_mes {
+    
+    vertical-align: middle;
+    display: inline-block;
+}
+.main .work{
+    min-width:1000px;
+    margin: 0 auto; 
+}
+.work .componey p{
+     text-align: left;
+}
+.work .timeLine{
+    width: 850px;
+    height: 1px;
+    background-color:#fff; 
+    position: relative;
+}
+.work .timeLine span{
+    position: absolute;
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: white;
+    top: -6px;
+}
+.main .work ul { 
+    min-width: 850px;
+    overflow: hidden; 
+    position: relative;
+}
+.work .time{
+    height: 60px;
+    font-weight: bold;
+}
+.work li:nth-of-type(1),
+.work .timeLine span:nth-of-type(1){
+    left: 20px;
+}
+.work li:nth-of-type(2),
+.work .timeLine span:nth-of-type(2){
+    left: 300px;
+}
+.work li:nth-of-type(3),
+.work .timeLine span:nth-of-type(3){
+    left: 590px;
+}
+
+.work .componey {
+    height: 400px;
+}
+.main .work li { position: absolute; }
+.main .work .componey li{ width: 260px; font-size: 16px;}
+.work h3 {border: none; text-align: left;}
+ .work .componey  p{
+    color: rgba(255,255,255,0.7);
+}
+.main .work .componey p span{
+    font-size: 18px;
+    line-height: 1.6em;
+    background: rgba(0,0,0,0.2);
+    padding: 5px;
+    border-radius: 4px;
+    color: rgba(255,255,255,1);
+    margin: 10px 0;
+    display: inline-block;
+}
+.project{
+
+}
+.project ul{
+    width: 900px;
+    overflow: hidden;
+}
+.project li{
+    float: left;
+    width: 300px;
+}
+.project li img{
+    border: 1px dotted #fff;
+    padding: 10px;
+    width: 240px;
+    height: 130px;
+}
+.skill ul{
+overflow: hidden;
+}
+.skill ul li{
+    float: left;
+    width: 230px;
+    border:1px #fff solid;
+    margin-right: 20px;
+}
+.skill h3{
+    padding: 5px;
+    margin: 0;
+    border:0;
+    background-color: white;
+    color: #28a745;
+    height: 32px;
+    line-height: 32px;
+}
+.skill li p:hover{
+    cursor: pointer;
+    background-color: rgba(255,255,255,0.3);
+}
+
+.exercise ul{
+    margin-top: 40px;
+    overflow: hidden;
+    width: 900px;
+    
+}
+.exercise ul li{
+    margin-top: 20px;
+min-height: 230px;
+    float: left;
+    width: 280px;
+
+}
+.exercise li a{
+    display: inline-block;
+    width: 100px;
+   padding: 10px;
+     border-radius: 6%; 
+    height: 120px;
+    overflow: hidden;
+    transition: .5s;
+}
+.exercise li:nth-of-type(4) a,
+.exercise li:nth-of-type(5) a,
+.exercise li:nth-of-type(6) a,
+.exercise li:nth-of-type(4) a img,
+.exercise li:nth-of-type(5) a img,
+.exercise li:nth-of-type(6) a img{
+    width: 140px;
+    height: 100px;
+}
+.exercise li a:hover{
+    transform: scale(1.1) rotate(6deg) ;
+}
+.exercise li a img{
+    width: 100px;
+    height: 120px;
+}
+.exercise p{
+    margin-top: 10px;
+    letter-spacing: normal;
+    padding-left: 30px;
+    width: 230px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 1.6em;
+}
